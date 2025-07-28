@@ -5,8 +5,8 @@ export default function AboutScreen() {
     <View
       style={styles.container}
     >
-      <Text style={styles.text}>Welcome to the About Screen</Text>
-      <link rel="stylesheet" href="" />
+      <Text style={styles.text}>Welcome to the About Screen!
+      </Text>
     </View>
   );
 }

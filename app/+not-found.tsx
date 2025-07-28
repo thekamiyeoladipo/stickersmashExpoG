@@ -1,19 +1,21 @@
-import { Text, View, StyleSheet } from "react-native";
-import { Link } from "expo-router";
- 
+import { View, Text, StyleSheet } from 'react-native'
+import React from 'react'
+import { Link, Stack } from 'expo-router'
 
-export default function Index() {
+
+export default function AboutScreen() {
   return (
-    <View
-      style={styles.container}
-    >
-      <Text style={styles.text}>Hello Stickersmash app! ReactNative & ExpoG</Text>
-      <Link style={styles.button} href="/about">Go to About Screen</Link>
-      
-      
-    </View>
+    <>
+      <Stack.Screen options={{ title: "Oops! Not Found!" }} />
+      <View style={styles.container}>
+        <link style={styles.button} href="/">
+          Go back to Home
+        </link>
+      </View>
+    </>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -42,6 +44,5 @@ const styles = StyleSheet.create({
     width: "80%",
     alignSelf: "center",
     shadowColor: "#000",
-
   }
 });
