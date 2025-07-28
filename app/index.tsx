@@ -8,7 +8,8 @@ export default function Index() {
       style={styles.container}
     >
       <Text style={styles.text}>Hello Stickersmash app! ReactNative & ExpoG</Text>
-      <Link style={styles.text} href="/about">View details</Link>
+      <Link style={styles.button} href="/about">Go to About Screen</Link>
+      
     </View>
   );
 }
@@ -29,4 +30,17 @@ const styles = StyleSheet.create({
     margin: 10,
     padding: 10,
   },
+  button: {
+    fontSize: 20,
+    color: "black",
+    marginTop: 20,
+    textAlign: "center",
+    padding: 10,
+    backgroundColor: "#fff",
+    borderRadius: 5,
+    width: "80%",
+    alignSelf: "center",
+    shadowColor: "#000",
+
+  }
 });
