@@ -1,12 +1,11 @@
 import { Text, View, StyleSheet } from "react-native";
 
-export default function Index() {
+export default function About() {
   return (
     <View
       style={styles.container}
     >
-      <Text style={styles.text}>Hello Stickersmash app! <br />
-      ReactNative & ExpoG</Text>
+      <Text style={styles.text}>About Screen</Text>
     </View>
   );
 }
