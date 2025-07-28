@@ -10,7 +10,6 @@ export default function Button({ label }: Props) {
       <Pressable
       onPress={() => console.log('Button Pressed')}
        style={styles.button}>
-        <Text style={styles.buttonLabel}>Click Me</Text>
         <Text style={styles.buttonLabel}>{label}</Text>
       </Pressable>
     </View>
@@ -24,17 +23,24 @@ const styles = StyleSheet.create({
        marginHorizontal: 20,
        alignItems: "center",
        justifyContent: "center",
-       padding: 3,
+       
     },
     button: {
+        backgroundColor: "white",
         borderRadius: 10,
         width: "100%",
         height: "100%",
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "row",
+        borderWidth: 5,
+        borderColor: "yellow",
+    },
+    buttonIcon: {
+        paddingRight: 8,
     },
     buttonLabel: {
-         
+         color: "black",
+         fontSize: 16, 
     }
 })
