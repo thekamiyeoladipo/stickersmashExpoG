@@ -3,7 +3,7 @@ import { Link } from "expo-router";
 import { Image } from 'expo-image';
 import ImageViewer from "@/components/ImageViewer";
 import Button from "@/components/Button";
-import "../global.css"
+import "../../global.css"
  
 const PlaceholderImage = require('../../assets/images/background-image.png');
 
@@ -13,7 +13,7 @@ export default function Index() {
 
       <View style={styles.imageContainer}>
         <ImageViewer imgSource={PlaceholderImage} />
-        <Text className="">Kamiye</Text>
+        <Text className="text-gray-100 text-underline">Kamiye</Text>
         
       </View>
 
