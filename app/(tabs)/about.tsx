@@ -5,7 +5,7 @@ export default function AboutScreen() {
     <View
       style={styles.container}
     >
-      <Text style={styles.text}>Welcome to the About Screen!
+      <Text style={styles.text}>About
       </Text>
     </View>
   );
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "black",
+    backgroundColor: "#25292e",
     color: "white",
   },
   text: {

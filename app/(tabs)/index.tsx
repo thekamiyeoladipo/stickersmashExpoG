@@ -7,7 +7,7 @@ export default function Index() {
     <View
       style={styles.container}
     >
-      <Text style={styles.text}>Hello Stickersmash app! ReactNative & ExpoG</Text>
+      <Text style={styles.text}>Home</Text>
       
       
     </View>
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "black",
+    backgroundColor: "#25292e",
     color: "white",
   },
   text: {
