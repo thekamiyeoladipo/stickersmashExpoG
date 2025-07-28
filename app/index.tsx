@@ -7,7 +7,7 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "black",
+        backgroundColor: "white",
       }}
     >
       <Text>Welcome to ExpoGo using ReactNative</Text>
