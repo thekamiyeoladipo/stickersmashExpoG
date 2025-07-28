@@ -1,15 +1,16 @@
 import { Text, View, StyleSheet } from "react-native";
 import { Link } from "expo-router";
+import { Image } from 'expo-image';
+import ImageViewer from "@/components/ImageViewer";
  
+const PlaceholderImage = require('../../assets/images/background-image.png');
 
 export default function Index() {
   return (
-    <View
-      style={styles.container}
-    >
-      <Text style={styles.text}>Home</Text>
-      
-      
+    <View style={styles.container}>
+      <View style={styles.imageContainer}>
+        <ImageViewer imgSource={PlaceholderImage} />
+      </View>
     </View>
   );
 }
@@ -17,30 +18,16 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#25292e",
     color: "white",
   },
-  text: {
-    color: "white",
-    fontSize: 20,
-    fontWeight: "bold",
-    textAlign: "center",
-    margin: 10,
-    padding: 10,
-  },
-  button: {
-    fontSize: 20,
-    color: "black",
-    marginTop: 20,
-    textAlign: "center",
-    padding: 10,
-    backgroundColor: "#fff",
-    borderRadius: 5,
-    width: "80%",
-    alignSelf: "center",
-    shadowColor: "#000",
-
+  imageContainer: {
+    flex: 1,
+    width: "100%",
+    height: 440,
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 20,
   }
 });
