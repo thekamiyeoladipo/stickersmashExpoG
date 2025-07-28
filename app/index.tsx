@@ -1,12 +1,14 @@
 import { Text, View, StyleSheet } from "react-native";
+import { Link } from "expo-router";
+ 
 
 export default function Index() {
   return (
     <View
       style={styles.container}
     >
-      <Text style={styles.text}>Hello Stickersmash app! <br />
-      ReactNative & ExpoG</Text>
+      <Text style={styles.text}>Hello Stickersmash app! ReactNative & ExpoG</Text>
+      <Link style={styles.text} href="/about">View details</Link>
     </View>
   );
 }
