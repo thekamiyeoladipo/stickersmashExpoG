@@ -8,7 +8,6 @@ export default function Index() {
       style={styles.container}
     >
       <Text style={styles.text}>Hello Stickersmash app! ReactNative & ExpoG</Text>
-      <Link style={styles.button} href="/about">Go to About Screen</Link>
       
       
     </View>
