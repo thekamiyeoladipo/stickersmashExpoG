@@ -4,10 +4,23 @@ import { Image } from 'expo-image';
 import ImageViewer from "@/components/ImageViewer";
 import Button from "@/components/Button";
 import "../../global.css"
+import * as ImagePicker from "expo-image-picker";
+
+
+
  
 const PlaceholderImage = require('../../assets/images/background-image.png');
 
 export default function Index() {
+
+const pickImageAsync = async () => {
+  let result = await ImagePicker.launchImageLibraryAsync({
+    allowsEditing: true,
+    quality: 1,
+  })
+}
+
+
   return (
     <View style={styles.container}>
 
